@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // 1. 디렉토리 설정
+    "rootDir": "./src",
+    "outDir": "./dist",
+    // 2. 모듈 및 환경 설정
+    "module": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "types": ["node"],
+    // 3. 소스맵 (디버깅 용도)
+    "sourceMap": true,
+    // 4. 엄격한 타입 체크
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    // 5. 모듈 호환성 및 기타 권장 설정
+    "esModuleInterop": true,
+    // CommonJS 모듈을 ES6처럼 가져오기 위해 추가
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+    "allowImportingTsExtensions": true
+    // node_modules 내부의 타입 체크 생략 (빌드 속도 향상)
+  }
+}
