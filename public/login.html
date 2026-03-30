@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+</head>
+<body>
+<div class="container login-container">
+    <h2>로그인</h2>
+    <p class="subTitle">GET 방식으로 전송해봅시다!</p>
+
+    <form action="/users/login" method="get">
+        <div class="input-group">
+            <label for="emailID">이메일</label>
+            <input type="email" name="email" id="emailID" placeholder="admin@test.com" required />
+        </div>
+        <div class="input-group">
+            <label for="passwordID">이메일</label>
+            <input type="password" name="password" id="passwordID" required />
+        </div>
+        <button type="submit" class="login-btn">로그인</button>
+    </form>
+</div>
+
+</body>
+</html>

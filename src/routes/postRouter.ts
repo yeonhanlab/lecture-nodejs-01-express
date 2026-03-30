@@ -50,7 +50,9 @@ router.get("/posts/:id", (req, res) => {
         // .json은 우리가 보내는 자바스크립트 객체를 json 형식으로 바꿔주는 일
         // 우리가 json() 안에 매개변수에 넣어준 건, 자바스크립트 객체 => jSON문법을 써서 쓰는 게 아니라, js 문법을 써서 씀
     }
-    res.json({ data: result });
+    res.json(
+        { data: result }
+    );
 });
 
 
