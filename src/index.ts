@@ -4,7 +4,7 @@ import postRouter from "./routes/postRouter.ts";
 import userRouter from "./routes/userRouter.ts";
 import path from "path";
 
-//1. 환경 변수 초기화
+//1. 환경 변수 초기화(프로그램이 시작되자마자 환경변수를 불러오게끔 함)
 dotenv.config();
 
 //2. Express 앱 생성
